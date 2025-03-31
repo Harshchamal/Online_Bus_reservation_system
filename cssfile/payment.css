@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container Box */
+.container {
+  background: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Checkout Title */
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Product List */
+.checkout-box {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.checkout-box h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkout-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.checkout-box span {
+  float: right;
+  font-weight: bold;
+}
+
+/* Payment Form */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Expiration Date */
+.exp-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-date input {
+  width: 48%;
+}
+
+/* Proceed Button */
+button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}

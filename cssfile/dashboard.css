@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(43, 38, 38, 0.85), rgba(9, 179, 51, 0.85)), 
+                url('image/C.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container - Full Width */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Account Settings Title */
+.settings-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Layout: Sidebar + Content */
+.settings-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 280px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #08963e;
+    color: white;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture Section */
+.profile-picture {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #08963e;
+}
+
+/* File Upload */
+.profile-picture input[type="file"] {
+    padding: 10px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #08963e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background: #08963e;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .settings-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+    }
+
+    .profile-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
