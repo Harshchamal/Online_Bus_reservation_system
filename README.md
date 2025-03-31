@@ -1,4 +1,5 @@
 🚌 Online Bus Reservation System for Long Distance Service
+
 This project is a web-based bus ticket reservation system designed to simplify the process of booking seats for long-distance travel. It enables passengers to search for available buses, choose seats, make payments securely, and receive email confirmations – all from a user-friendly online interface. Built using HTML, CSS, JavaScript (frontend) and PHP with MySQL (backend), the system provides real-time functionality and secure data management.
 
 🔑 Features
